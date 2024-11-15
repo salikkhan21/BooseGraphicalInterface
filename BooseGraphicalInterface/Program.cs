@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Threading;
+using BOOSE;
 
 namespace BooseGraphicalInterface
 {
@@ -10,6 +11,8 @@ namespace BooseGraphicalInterface
     /// </summary>
     public partial class MainForm : Form
     {
+       
+        
         private TextBox programTextBox = new TextBox();
         private TextBox commandTextBox = new TextBox();
         private Button runButton = new Button();
@@ -22,13 +25,16 @@ namespace BooseGraphicalInterface
         private Button loadButton = new Button();
         private Button openNewThread = new Button();
         private List<Form> additionalForms = new List<Form>();
+        private CommandOneParameter parser;
 
-       
+
         public MainForm()
         {
             InitializeComponent();
             this.resultBoxGraphics = resultBox.CreateGraphics();
-            
+           
+
+
         }
 
         /// <summary>
