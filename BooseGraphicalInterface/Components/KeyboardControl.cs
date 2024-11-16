@@ -46,7 +46,7 @@ namespace BooseGraphicalInterface
             }
 
             // Set the size of the control
-            this.Size = new System.Drawing.Size(830, 300);
+            this.Size = new System.Drawing.Size(830, 270);
 
             // Add the space, enter, and backspace buttons on the last row
             var spaceButton = CreateButton("Space", 200, buttonHeight);
